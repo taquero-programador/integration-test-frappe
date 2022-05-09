@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include tienda_prueba *.css
+recursive-include tienda_prueba *.csv
+recursive-include tienda_prueba *.html
+recursive-include tienda_prueba *.ico
+recursive-include tienda_prueba *.js
+recursive-include tienda_prueba *.json
+recursive-include tienda_prueba *.md
+recursive-include tienda_prueba *.png
+recursive-include tienda_prueba *.py
+recursive-include tienda_prueba *.svg
+recursive-include tienda_prueba *.txt
+recursive-exclude tienda_prueba *.pyc
