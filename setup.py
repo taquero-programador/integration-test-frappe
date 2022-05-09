@@ -11,7 +11,7 @@ setup(
 	version=version,
 	description="tienda prueba",
 	author="Javier Rangel",
-	author_email="jrangel93@proton.me",
+	author_email="mrangel@valsa.mx",
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,

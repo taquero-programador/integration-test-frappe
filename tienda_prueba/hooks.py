@@ -6,7 +6,7 @@ app_publisher = "Javier Rangel"
 app_description = "tienda prueba"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
-app_email = "jrangel93@proton.me"
+app_email = "mrangel@valsa.mx"
 app_license = "MIT"
 
 # Includes in <head>
