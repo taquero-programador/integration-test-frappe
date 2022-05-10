@@ -1,7 +1,8 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
- "autoname": "item_name",
+ "autoname": "ST.####",
  "creation": "2022-05-10 09:32:06.235332",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,20 +10,29 @@
  "field_order": [
   "item_name",
   "precio",
-  "amended_from",
-  "stock"
+  "stock",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "item_name",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Item name",
-   "options": "Articulo"
+   "options": "Articulo",
+   "reqd": 1
   },
   {
+   "fetch_from": "articulo.author",
    "fieldname": "precio",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Precio"
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Int",
+   "label": "Stock",
+   "precision": "0"
   },
   {
    "fieldname": "amended_from",
@@ -32,17 +42,12 @@
    "options": "Tienda Fisica",
    "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "fieldname": "stock",
-   "fieldtype": "Data",
-   "label": "Stock"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-05-10 10:50:40.241718",
+ "modified": "2022-05-10 13:01:38.312513",
  "modified_by": "Administrator",
  "module": "Tienda",
  "name": "Tienda Fisica",
@@ -74,6 +79,5 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC",
- "title_field": "item_name"
+ "sort_order": "DESC"
 }
