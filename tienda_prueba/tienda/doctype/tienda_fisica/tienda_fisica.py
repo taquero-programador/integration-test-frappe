@@ -21,6 +21,5 @@ class TiendaFisica(WebsiteGenerator):
 
 	# validar nivel de stock
 	def stock_validate(self):
-		
-		if self.stock <= '10':
+		if self.stock <= '9':
 			frappe.throw('El stock es muy bajo!')
